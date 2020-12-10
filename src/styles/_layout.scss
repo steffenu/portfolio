@@ -1,0 +1,25 @@
+// The main Container - Grid that where all sub components are
+// wrapped in
+
+.App {
+  display: grid;
+  //grid-auto-flow: column; // colums
+  max-width: 100vw;
+  font-family: "Open Sans", sans-serif;
+
+  background: rgb(35, 38, 58);
+  background: linear-gradient(
+    90deg,
+    rgba(35, 38, 58, 1) 0%,
+    rgba(108, 110, 123, 1) 250%
+  );
+
+  // max-height: 100vh;
+  // padding: 0 2rem;
+
+  //grid-template-columns: 1fr;
+  //grid-template-rows: minmax(100vh, auto);
+}
+
+#__next {
+}

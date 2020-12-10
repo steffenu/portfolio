@@ -1,0 +1,60 @@
+@mixin notched {
+  --notchSize: 7px;
+
+  clip-path: polygon(
+    0% 0%,
+    /* top left */ 0% 0%,
+    /* top left */ calc(100% - var(--notchSize)) 0%,
+    100% var(--notchSize),
+    100% calc(100% - var(--notchSize)),
+    /* bottom right */ 100% 100%,
+    /* bottom right */ var(--notchSize) 100%,
+    0% calc(100% - var(--notchSize))
+  );
+}
+
+// ---------------HEADER---------------
+
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+
+  position: relative;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(126, 126, 126, 1) 350%
+  );
+}
+
+.header {
+  list-style: none;
+  display: flex;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 700;
+  padding: 2rem;
+  margin: 0 $seitenabstand; /*FIX*/
+}
+
+.header > *:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 20rem;
+  }
+}
+
+.node > path {
+  fill: $main;
+}

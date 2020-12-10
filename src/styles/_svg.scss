@@ -1,0 +1,27 @@
+#eins {
+  height: 1px;
+}
+
+.menuWrapper:after,
+.menuWrapper:before {
+  /*color: $border;*/
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  padding: 1rem;
+  text-decoration: line-through;
+  font-family: monospace;
+}
+
+/*       <svg>
+        <line
+          id="eins"
+          x1="0"
+          y1="0"
+          x2="100"
+          y2="0"
+          stroke="rgba(140,170,190,0.5)"
+        />
+      </svg> */
+
+> svg {
+  height: 1px;
+}

@@ -1,0 +1,64 @@
+/*//////////////
+## FARBEN ##
+//////////////*/
+$main: #00ffc4;
+$background: #080411;
+
+$color_main: white;
+
+/*//////////////
+## ABSTÄNDE ##
+//////////////*/
+
+$seitenabstand: 8rem;
+$border: 3rem solid black;
+
+// with sass you can include as $background
+// with normal css variables you always need to type var($background)
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10 px , 10px/16px = 62,5 %
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+body {
+  // background-repeat: no-repeat;
+  /*   border-left: $border;
+  border-right: $border; */
+
+  //background-color: $background;
+  //max-height: 100vh;
+}
