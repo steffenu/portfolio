@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
-import Header from "../Header";
+import Header from "../header";
 import Landing from "../landing";
 import Praktikumsplatz from "../praktikumsplatz";
 
