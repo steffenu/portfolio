@@ -72,7 +72,8 @@ const Main_Flex_Container = styled.div`
   justify-content: space-between;
   //padding-right: 10rem; /*8rem seitenbastand + 2 rem extra*/
   padding-left: 8rem; /*8rem seitenbastand + 2 rem black border*/
-  overflow: hidden;
+
+  height: calc(100vh - 120px);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -80,7 +81,6 @@ const Main_Flex_Container = styled.div`
     align-items: center;
 
     & > * :nth-child(2) {
-      margin-top: 4rem;
     }
   }
 `;
