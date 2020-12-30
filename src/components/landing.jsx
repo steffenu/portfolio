@@ -63,7 +63,7 @@ opacity: 0.4;
 `;
 
 const Main_Flex_Container = styled.div`
-  padding: 3rem 0;
+  padding: 4rem 0;
 
   background: #2b2d41;
   position: relative;
@@ -73,7 +73,7 @@ const Main_Flex_Container = styled.div`
   //padding-right: 10rem; /*8rem seitenbastand + 2 rem extra*/
   padding-left: 8rem; /*8rem seitenbastand + 2 rem black border*/
 
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -89,7 +89,6 @@ const Flex_Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  padding-top: 10vh;
 `;
 
 const Flex_container_1 = styled.div`
