@@ -24,15 +24,6 @@ function about_me() {
         <Frontend> Besuch vorprogrammieren.</Frontend>
         <br />
         <br />
-        Ein Auge für Details im <Frontend_Thin>Fronted</Frontend_Thin> sowie
-        Verständiss für das <Frontend_Bold>Backend.</Frontend_Bold>
-        <br />
-        Das ist meine Beigeisterung <Frontend_Thin>Front</Frontend_Thin>
-        <Frontend_To> TO </Frontend_To>
-        <Frontend_Bold>Back</Frontend_Bold>.
-        <br />
-        <br />
-        <br />
         Ich freue mich auf spannende Herausforderungen in einem erfahrenden
         Team.
         <br />
@@ -50,34 +41,39 @@ const Main_Flex_Container = styled.div`
   width: calc(100% - 20rem);
   padding: 8rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 2rem;
+  }
 `;
 
 const Text = styled.p`
   color: #b3b7dc;
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 0.8vw); ;
 `;
 
 const Frontend = styled.span`
   color: ${({ theme }) => theme.colors.primary};
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 0.8vw);
 `;
 
 const Frontend_Thin = styled.span`
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: calc(2.2rem + 0.8vw);
 `;
 
 const Frontend_To = styled.span`
   color: white;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: calc(0.8rem + 0.8vw);
 `;
 
 const Frontend_Bold = styled.span`
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: calc(2.2rem + 0.8vw);
 `;
 
 export default about_me;

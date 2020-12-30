@@ -24,6 +24,10 @@ const Main_Flex_Container = styled.div`
 
   border-right: 10px solid ${({ theme }) => theme.colors.primary};
   border-bottom: 10px solid ${({ theme }) => theme.colors.primary};
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const Background_Container = styled.div`
@@ -55,8 +59,7 @@ const Flex_container_1 = styled.div`
 
 const Title = styled.h2`
   color: #c3e2c4;
-  font-size: 2.5rem;
-  font-size: 2.5vw;
+  font-size: calc(1.6rem + 0.8vw);
 `;
 
 const Description_Container = styled.div`
@@ -70,7 +73,7 @@ const Description_Container = styled.div`
 const Description = styled.p`
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 500;
-  font-size: 2vw;
+  font-size: calc(1.6rem + 0.8vw);
 `;
 
 export default nachwort;

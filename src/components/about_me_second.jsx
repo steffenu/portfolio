@@ -45,16 +45,20 @@ const Main_Flex_Container = styled.div`
   padding: 8rem;
   margin-bottom: 2rem;
   margin-top: 20rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Text = styled.p`
   color: #b3b7dc;
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 0.8vw);
 `;
 
 const Frontend = styled.span`
   color: ${({ theme }) => theme.colors.primary};
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 0.8vw);
 `;
 
 export default about_me_second;

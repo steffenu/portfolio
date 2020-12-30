@@ -31,6 +31,8 @@ const Main_Flex_Container = styled.div`
   align-items: center;
 
   border-right: 10px solid ${({ theme }) => theme.colors.primary};
+
+
 `;
 
 const Background_Container = styled.div`

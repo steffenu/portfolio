@@ -17,7 +17,7 @@ const Main_Flex_Container = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 120px;
+  min-height: 120px;
   max-height: 150px;
 
   position: relative;
@@ -28,6 +28,10 @@ const Main_Flex_Container = styled.div`
     rgba(255, 255, 255, 1) 0%,
     rgba(126, 126, 126, 1) 350%
   );
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const Header_UL = styled.ul`
@@ -42,6 +46,16 @@ const Header_UL = styled.ul`
 
   & > *:not(:last-child) {
     margin-right: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
   }
 `;
 

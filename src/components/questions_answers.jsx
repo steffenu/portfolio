@@ -25,9 +25,9 @@ function about_me_second() {
         Mit welchen Sprachen kennst du dich am besten aus ? Worauf hast du Lust.
         <br />
         <SubText>
-          Mit Javscript habe ich Chrome Erweiterungen , Discord Bots , Apis Web
-          Frontends erstellt ... Mit Python und Micropython automatisiere ich
-          mein Smart Home - ESP32 , Raspberry Pi's.
+          Mit Javscript habe ich Chrome Erweiterungen , Discord Bots , Apis ,
+          Frontends erstellt ... Mit Python bzw Micropython automatisiere ich
+          mein Smart Home.
         </SubText>
         <br />
         <br />
@@ -47,15 +47,19 @@ function about_me_second() {
         <Frontend> Front-End</Frontend> ?
         <br />
         <SubText>
-          Meine Definition von Front und Backend liegt derzeit im Hobby und
-          schulischen Bereich. Ich spiele mit Layout, Schriftarten, Farben,
-          Menüs , Bedienelementen in Adobe sowie mit Frameworks / Biblotheken
-          fürs Front und Backends.
+          Ich visualisiere gerne mit meinen inneren Auge die fertige Anwendung.
           <br />
-          Eine voreilige Grenze ziehen möchte ich da nicht.
+          Der Teil den der Nutzer sieht und den Teil der die Idee realisiert.
+          <br />
           <br />
           Meist ist es nur eine Frage der Zeit bis man sich den nächsten coolen
-          shit anschaut und dann auch begeistert ist.
+          shit anschaut.
+          <br />
+          <br />
+          Deswegen habe ich als Slogan "Front to Back" gewählt.
+          <br />
+          Technologien beinflussen was möglich ist im Frontend und nötig ist um
+          an der Oberfäche zu schwimmen.
         </SubText>
         <br />
         <br />
@@ -65,8 +69,8 @@ function about_me_second() {
           Eine großartige Möglichkeit dort zu arbeiten wo Verlässlichkeit von
           Systemen , Skalierbarkeit riesen Themen sind.
           <br />
-          Moderne Software-Architekturen in das Frontend zu integrieren empfinde
-          ich als aufregende Perspektive.
+          Moderne Software-Architekturen für das Frontend zu nutzen empfinde ich
+          als aufregende Perspektive.
         </SubText>
         <br />
         <br />
@@ -75,7 +79,9 @@ function about_me_second() {
         <SubText>
           Da 2 Raspberry Pi's bei mir laufen, ja.
           <br />
-          Apache Server + Datenbanken.
+          Privat nutze ich Windows für Software und Treiber Kompatiblität.
+          <br />
+          Heist aber nicht das ich mich vor der Commandzeile verschliesse .
         </SubText>
       </Text>
     </Main_Flex_Container>
@@ -89,12 +95,16 @@ const Main_Flex_Container = styled.div`
   padding: 8rem;
   margin-bottom: 10rem;
   margin-top: 10rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Text = styled.p`
   font-family: "Roboto", serif;
   color: #e2e1e1;
-  font-size: 2.2rem;
+  font-size: calc(2.2rem + 0.8vw);
 `;
 
 const SubText = styled.p`
@@ -103,14 +113,14 @@ const SubText = styled.p`
   font-family: "Open Sans", serif;
   color: #c7c7c7;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: calc(1.8rem + 0.8vw);
 `;
 
 const Frontend = styled.span`
   font-family: "Roboto", serif;
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: calc(2.2rem + 0.8vw);
 `;
 
 export default about_me_second;

@@ -19,18 +19,22 @@ const Main_Flex_Container = styled.div`
   padding: 4rem;
   margin-top: 20rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Text = styled.p`
   color: ${({ theme }) => theme.colors.primary};
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 0.8vw);
   font-family: "Open Sans", serif;
   font-weight: 300;
 `;
 
 const Frontend = styled.span`
   color: ${({ theme }) => theme.colors.primary};
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 0.8vw);
 `;
 
 export default about_me_second;

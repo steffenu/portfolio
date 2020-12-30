@@ -29,11 +29,16 @@ const Main_Flex_Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6rem auto;
-  margin-top: 20rem;
+  margin: 0rem auto;
+  margin-bottom: 20rem;
+
   height: 320px;
   width: calc(100% - 20rem);
   padding: 8rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Card = styled.div`
@@ -60,14 +65,14 @@ const Image = styled.div`
 const Card_Text = styled.p`
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: calc(1.4rem + 0.8vw);
 `;
 
 const Side_Text = styled.p`
   color: ${({ theme }) => theme.colors.primary};
   font-family: "Roboto", serif;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: calc(1.2rem + 0.8vw);
 `;
 
 const Side_Text_container = styled.div`
@@ -76,7 +81,7 @@ const Side_Text_container = styled.div`
 
 const Frontend = styled.span`
   color: ${({ theme }) => theme.colors.primary};
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 0.8vw);
 `;
 
 export default about_me_fourth;

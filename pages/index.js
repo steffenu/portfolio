@@ -34,11 +34,8 @@ export default function Home() {
       <About_Me_Second></About_Me_Second>
       <Background_2 />
       <Skillset></Skillset>
-
-      <Background_1 />
       <About_Me_Third></About_Me_Third>
       <Questions />
-      <Nachwort></Nachwort>
       <About_Me_Fourth></About_Me_Fourth>
     </div>
   );

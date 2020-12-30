@@ -10,20 +10,45 @@ function card_container() {
       <Main_Flex_Container_Card>
         <Image></Image>
         <Flex_container_1>
-          <Title>PYTHON AUTOMATION</Title>
+          <Title>XYZ PROJEKT</Title>
           <Description_Container>
             <Description>GUI MIT TKINTER , SOCKETS , THREADING</Description>
           </Description_Container>
-
-          <Tag_Container>
-            <Tag>REACT.JS</Tag>
-            <Tag>STYLED COMPONENTS</Tag>
-            <Tag>FRAMER MOTION</Tag>
-          </Tag_Container>
         </Flex_container_1>
       </Main_Flex_Container_Card>
 
-      <React_SVG className="svg"></React_SVG>
+      {/* <React_SVG className="svg"></React_SVG> */}
+
+      <Main_Flex_Container_Card>
+        <Image></Image>
+        <Flex_container_1>
+          <Title>XYZ PROJEKT</Title>
+          <Description_Container>
+            <Description>
+              Some random text that serves as a longer description with more
+              text.
+            </Description>
+          </Description_Container>
+        </Flex_container_1>
+      </Main_Flex_Container_Card>
+
+      {/* <Node className="svg"></Node> */}
+
+      <Main_Flex_Container_Card>
+        <Image></Image>
+        <Flex_container_1>
+          <Title>XYZ PROJEKT</Title>
+          <Description_Container>
+            <Description>
+              Some random text that serves as a longer description with more
+              text. Some random text that serves as a longer description with
+              more text.
+            </Description>
+          </Description_Container>
+        </Flex_container_1>
+      </Main_Flex_Container_Card>
+
+      {/* <Node className="svg"></Node> */}
 
       <Main_Flex_Container_Card>
         <Image></Image>
@@ -32,48 +57,6 @@ function card_container() {
           <Description_Container>
             <Description>GUI MIT TKINTER , SOCKETS , THREADING</Description>
           </Description_Container>
-
-          <Tag_Container>
-            <Tag>REACT.JS</Tag>
-            <Tag>STYLED COMPONENTS</Tag>
-            <Tag>FRAMER MOTION</Tag>
-          </Tag_Container>
-        </Flex_container_1>
-      </Main_Flex_Container_Card>
-
-      <Node className="svg"></Node>
-
-      <Main_Flex_Container_Card>
-        <Image></Image>
-        <Flex_container_1>
-          <Title>XYZ PROJEKT</Title>
-          <Description_Container>
-            <Description>GUI MIT TKINTER , SOCKETS , THREADING</Description>
-          </Description_Container>
-
-          <Tag_Container>
-            <Tag>REACT.JS</Tag>
-            <Tag>STYLED COMPONENTS</Tag>
-            <Tag>FRAMER MOTION</Tag>
-          </Tag_Container>
-        </Flex_container_1>
-      </Main_Flex_Container_Card>
-
-      <Node className="svg"></Node>
-
-      <Main_Flex_Container_Card>
-        <Image></Image>
-        <Flex_container_1>
-          <Title>XYZ PROJEKT</Title>
-          <Description_Container>
-            <Description>GUI MIT TKINTER , SOCKETS , THREADING</Description>
-          </Description_Container>
-
-          <Tag_Container>
-            <Tag>REACT.JS</Tag>
-            <Tag>STYLED COMPONENTS</Tag>
-            <Tag>FRAMER MOTION</Tag>
-          </Tag_Container>
         </Flex_container_1>
       </Main_Flex_Container_Card>
     </Main_Flex_Container>
@@ -107,11 +90,15 @@ const Main_Flex_Container = styled.div`
   );
 
   & > :first-child {
-    margin-top: 4rem;
+    margin-top: 5vw;
+  }
+
+  & > *:not(last-child) {
+    margin-bottom: 20rem;
   }
 
   & > :last-child {
-    margin-bottom: 4rem;
+    margin-bottom: 5vw;
   }
 `;
 
@@ -119,13 +106,19 @@ const Main_Flex_Container_Card = styled.div`
   width: 65vw;
   height: 32vw;
   background: #2b2d41;
-  border-radius: 15px;
+
   display: flex;
 
   justify-content: space-around;
   align-items: center;
 
-  border-right: 10px solid ${({ theme }) => theme.colors.primary};
+  border-right: 5px solid ${({ theme }) => theme.colors.primary};
+  box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: 42vw;
+  }
 `;
 
 const Background_Container = styled.div`

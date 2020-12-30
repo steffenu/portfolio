@@ -47,6 +47,16 @@ const Main_Flex_Container = styled.div`
   & > :nth-child(5) {
     fill: ${({ theme }) => theme.colors.primary};
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 2rem;
+
+    & > * {
+      transform: scale(0.6);
+      margin-right: 0 !important;
+    }
+  }
 `;
 
 const Text = styled.p`

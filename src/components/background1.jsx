@@ -33,7 +33,7 @@ const Text_Container = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 3rem;
+  font-size: calc(3rem + 0.8vw);
   font-weight: 700;
   color: ${({ theme }) => theme.colors.primary};
 `;

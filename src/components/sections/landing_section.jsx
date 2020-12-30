@@ -8,17 +8,25 @@ import Praktikumsplatz from "../praktikumsplatz";
 function landing_section() {
   return (
     <Main_Flex_Container>
+      <GlobalStyle></GlobalStyle>
       <Header></Header>
       <Landing></Landing>
     </Main_Flex_Container>
   );
 }
 
+const GlobalStyle = createGlobalStyle`
+
+.start_svg{
+
+  
+}
+
+`;
+
 const Main_Flex_Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin-bottom: 20rem;
 `;
 
 export default landing_section;
