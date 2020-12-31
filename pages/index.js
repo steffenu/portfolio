@@ -31,7 +31,7 @@ export default function Home() {
       <Background_1 />
       <Hobby></Hobby>
       <Hobby_Tags></Hobby_Tags>
-      <About_Me_Second></About_Me_Second>
+
       <Background_2 />
       <Skillset></Skillset>
       <About_Me_Third></About_Me_Third>

@@ -9,11 +9,7 @@ function about_me_fourth() {
         <Card_Text>Steffen U.</Card_Text>
       </Card>
       <Side_Text_container>
-        <Side_Text>
-          SUCHT IHR EINEN BEGEISTERTEN WEB ENTWICKLER ? UND ARBEITE MIT
-          JAVSCRIPT & VARIOUS FRAMWORKS CREATING APPLICATIONS WITH FUN USER
-          EXPERIENCE
-        </Side_Text>
+        <Side_Text>Fachinformatiker für Anwendungsentwicklung</Side_Text>
       </Side_Text_container>
     </Main_Flex_Container>
   );
@@ -38,6 +34,7 @@ const Main_Flex_Container = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    flex-direction: column;
   }
 `;
 
@@ -51,6 +48,11 @@ const Card = styled.div`
   height: 200px;
   min-width: 220px;
   margin-right: 6rem;
+
+  @media (max-width: 768px) {
+    margin-right: 0rem;
+    margin-bottom: 10vh;
+  }
 `;
 
 const Image = styled.div`

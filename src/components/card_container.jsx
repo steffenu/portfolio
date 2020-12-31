@@ -79,7 +79,7 @@ const Main_Flex_Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 30rem;
+  //margin-bottom: 10vh;
 
   background: rgb(22, 223, 177);
   background: linear-gradient(
@@ -90,7 +90,7 @@ const Main_Flex_Container = styled.div`
   );
 
   & > :first-child {
-    margin-top: 5vw;
+    margin-top: 20vw;
   }
 
   & > *:not(last-child) {
@@ -98,7 +98,7 @@ const Main_Flex_Container = styled.div`
   }
 
   & > :last-child {
-    margin-bottom: 5vw;
+    margin-bottom: 20vw;
   }
 `;
 

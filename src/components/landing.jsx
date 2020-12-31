@@ -17,12 +17,11 @@ export default function landing() {
           </Steffen_info>
         </Flex_container_1>
         <Flex_container_2>
+          <Web_entwicklung>Praktikumsplatz gesucht für</Web_entwicklung>
           <Front_to_Back>
-            <span className="span_0">FRONT</span>{" "}
-            <span className="span_1">TO</span>
-            <span className="span_2"> BACK</span>
+            <span className="span_2">FRONTED</span>
+            <span className="span_0"> ENTWICKLUNG</span>
           </Front_to_Back>
-          <Web_entwicklung>Web Entwicklung</Web_entwicklung>
         </Flex_container_2>
       </Flex_Wrapper>
       <Background_1
@@ -79,6 +78,7 @@ const Main_Flex_Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0rem;
 
     & > * :nth-child(2) {
     }
@@ -96,11 +96,19 @@ const Flex_container_1 = styled.div`
 
   display: flex;
   flex-direction: column;
+  @media (max-width: 450px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Flex_container_2 = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 450px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Hi = styled.p`
@@ -120,22 +128,33 @@ const Steffen = styled.h1`
 const Steffen_info = styled.p`
   font-size: calc(1.4rem + 0.8vw);
   color: #849184;
+
+  @media (max-width: 450px) {
+    text-align: center;
+    font-size: calc(1.2rem + 0.5vw);
+  }
 `;
 
 const Front_to_Back = styled.h2`
-  margin-top: 8vw;
-
   width: 100%;
   font-size: calc(3.2rem + 0.8vw);
   color: ${({ theme }) => theme.colors.primary};
 
   font-weight: 300;
+  @media (max-width: 450px) {
+    font-size: calc(2.4rem + 0.4vw);
+  }
 `;
 
 const Web_entwicklung = styled.p`
+  margin-top: 8vw;
   font-size: calc(1.2rem + 0.8vw);
   line-height: 0.8;
   color: white;
+  @media (max-width: 450px) {
+    text-align: center;
+    font-size: calc(1.2rem + 0.6vw);
+  }
 `;
 
 const Wrapper = styled.div`

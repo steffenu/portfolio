@@ -47,19 +47,9 @@ function about_me_second() {
         <Frontend> Front-End</Frontend> ?
         <br />
         <SubText>
-          Ich visualisiere gerne mit meinen inneren Auge die fertige Anwendung.
+          Ich visualisiere gerne die fertige Anwendung.
           <br />
           Der Teil den der Nutzer sieht und den Teil der die Idee realisiert.
-          <br />
-          <br />
-          Meist ist es nur eine Frage der Zeit bis man sich den nächsten coolen
-          shit anschaut.
-          <br />
-          <br />
-          Deswegen habe ich als Slogan "Front to Back" gewählt.
-          <br />
-          Technologien beinflussen was möglich ist im Frontend und nötig ist um
-          an der Oberfäche zu schwimmen.
         </SubText>
         <br />
         <br />
@@ -94,10 +84,11 @@ const Main_Flex_Container = styled.div`
   width: calc(100% - 20rem);
   padding: 8rem;
   margin-bottom: 10rem;
-  margin-top: 10rem;
+  margin-top: 10vh;
 
   @media (max-width: 768px) {
     width: 100%;
+    padding: 4rem;
   }
 `;
 

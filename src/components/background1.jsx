@@ -19,8 +19,8 @@ const Main_Flex_Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20rem;
-  margin-bottom: 10rem;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 
   /*  width: calc(100% - 20rem); */
   width: 100%;

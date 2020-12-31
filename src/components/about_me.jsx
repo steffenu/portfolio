@@ -17,10 +17,10 @@ function about_me() {
         <br />
         <br />
         Mit einem Verständiss für das Web kann man seine eigene Welt schaffen ,
-        Probleme Lösen und anderen Dinge näher bringen. In einem Markt der nach
+        Probleme Lösen und Dinge anderen näher bringen. In einem Markt der nach
         Vorne geht , wo viele Interessante Dinge passieren.
         <br />
-        User-Interaktionen fliessend gestalten und den nächsten
+        Durch Gestaltung den nächsten
         <Frontend> Besuch vorprogrammieren.</Frontend>
         <br />
         <br />
@@ -41,6 +41,7 @@ const Main_Flex_Container = styled.div`
   width: calc(100% - 20rem);
   padding: 8rem;
   margin-bottom: 2rem;
+  margin-top: 10vh;
 
   @media (max-width: 768px) {
     width: 100%;
