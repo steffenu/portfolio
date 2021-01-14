@@ -71,7 +71,7 @@ function about_me_second() {
           <br />
           Privat nutze ich Windows für Software und Treiber Kompatiblität.
           <br />
-          Heist aber nicht das ich mich vor der Commandzeile verschliesse .
+          Heist aber nicht das ich mich vor der Commando-zeile verschliesse .
         </SubText>
       </Text>
     </Main_Flex_Container>
