@@ -34,7 +34,7 @@ function about_me_second() {
         Schonmal eine <Frontend>API</Frontend> erstellt ?
         <br />
         <SubText>
-          Ja , gerade mit Daten und Schnittstellen zu arbeiten macht spass.
+          Ja , gerade mit Daten und Schnittstellen zu arbeiten macht Spass.
         </SubText>
         <br />
         <br />
@@ -53,7 +53,7 @@ function about_me_second() {
         </SubText>
         <br />
         <br />
-        Warum <Frontend> Boreus</Frontend> ?
+        Warum <Frontend> Praktikum bei euch </Frontend> ?
         <br />
         <SubText>
           Eine großartige Möglichkeit dort zu arbeiten wo Verlässlichkeit von

@@ -20,12 +20,11 @@ function about_me() {
         Probleme Lösen und Dinge anderen näher bringen. In einem Markt der nach
         Vorne geht , wo viele Interessante Dinge passieren.
         <br />
-        Durch Gestaltung den nächsten
-        <Frontend> Besuch vorprogrammieren.</Frontend>
+        Durch gezielte Gestaltung den User
+        <Frontend> zum wiederkommen animieren.</Frontend>
         <br />
         <br />
-        Ich freue mich auf spannende Herausforderungen in einem erfahrenden
-        Team.
+        Ich freue mich auf spannende Herausforderungen in einem erfahrenem Team.
         <br />
         <br />
         <br />
