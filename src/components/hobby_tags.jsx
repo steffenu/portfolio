@@ -7,7 +7,7 @@ function hobby_tags() {
       <Tag>Smart Home</Tag>
       <Tag>Raspberry Pi</Tag>
       <Tag>Video Editing / Content Creation</Tag>
-      <Tag>Neue Dinge Lernen</Tag>
+      <Tag>Self Development</Tag>
       <Tag>Automatisieren</Tag>
       <Tag>Walking / Biking</Tag>
       <Tag>Musik / Konzerte</Tag>
@@ -55,8 +55,8 @@ const Tag = styled.li`
   margin-top: 1rem;
   font-size: calc(1.6rem + 0.6vw);
 
-  border: 2px solid ${({ theme }) => theme.colors.primary};
-  border-radius: 15px;
+  //border: 2px solid ${({ theme }) => theme.colors.primary};
+  // border-radius: 15px;
   padding: 0.5rem 0.8rem;
 `;
 

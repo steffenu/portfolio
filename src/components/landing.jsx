@@ -12,8 +12,10 @@ export default function landing() {
           <Hi>Hi, mein Name ist</Hi>
           <Steffen>Steffen Unger</Steffen>
           <Steffen_info>
-            Web Entwicklung Enthusiast, <br /> Umschüler im Bereich
-            Anwendungsentwicklung
+            Umschüler im Bereich Anwendungsentwicklung.
+            <br />
+            Web Anwendungen , Schnittstellen , Automatisierung , UI / UX
+            <br />
           </Steffen_info>
         </Flex_container_1>
         <Flex_container_2>
@@ -39,10 +41,15 @@ const GlobalStyle = createGlobalStyle`
 .start_svg{
 
 max-width: 100%;
-height: 100%;
+height: calc(100vh);
+transform:translateY(120px);
 overflow:hidden;
 align-self: flex-end;
 opacity: 0.4;
+
+@media (max-width: 768px) {
+  transform:translateY(0px);
+  }
 
 
   
@@ -72,7 +79,8 @@ const Main_Flex_Container = styled.div`
   //padding-right: 10rem; /*8rem seitenbastand + 2 rem extra*/
   padding-left: 8rem; /*8rem seitenbastand + 2 rem black border*/
 
-  min-height: calc(100vh - 120px);
+  height: calc(100vh);
+  overflow: hidden;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -112,22 +120,29 @@ const Flex_container_2 = styled.div`
 `;
 
 const Hi = styled.p`
-  font-size: calc(1.2rem + 0.8vw);
+  font-size: calc(1rem + 0.8vw);
   color: ${({ theme }) => theme.colors.primary};
+  margin-bottom: 0.7rem;
   font-weight: 500;
 `;
 
 const Steffen = styled.h1`
   line-height: 1.2;
-  font-size: calc(4rem + 0.8vw);
+  font-size: calc(5rem + 0.8vw);
   color: white;
-  margin-bottom: 2rem;
+
   font-weight: 500;
+
+  @media (max-width: 450px) {
+    text-align: center;
+    font-size: calc(4rem + 0.8vw);
+  }
 `;
 
 const Steffen_info = styled.p`
-  font-size: calc(1.4rem + 0.8vw);
+  font-size: calc(1rem + 0.8vw);
   color: #849184;
+  margin-top: 6vw;
 
   @media (max-width: 450px) {
     text-align: center;
@@ -137,18 +152,19 @@ const Steffen_info = styled.p`
 
 const Front_to_Back = styled.h2`
   width: 100%;
-  font-size: calc(3.2rem + 0.8vw);
+  font-size: calc(4rem + 0.8vw);
   color: ${({ theme }) => theme.colors.primary};
 
   font-weight: 300;
   @media (max-width: 450px) {
     font-size: calc(2.4rem + 0.4vw);
+    text-align: center;
   }
 `;
 
 const Web_entwicklung = styled.p`
   margin-top: 8vw;
-  font-size: calc(1.2rem + 0.8vw);
+  font-size: calc(1rem + 0.8vw);
   line-height: 0.8;
   color: white;
   @media (max-width: 450px) {
@@ -176,7 +192,6 @@ const Praktikumsplatz_Container = styled.div`
 
 const Praktikumsplatz_gesucht = styled.h2`
   color: white;
-  font-size: 1.4rem;
 `;
 
 const Start = styled.p`

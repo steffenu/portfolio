@@ -22,12 +22,14 @@ const Main_Flex_Container = styled.div`
 
   position: relative;
 
-  background: rgb(255, 255, 255);
+  background: #2b2d41;
+
+  /*   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(126, 126, 126, 1) 350%
-  );
+  ); */
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -39,7 +41,8 @@ const Header_UL = styled.ul`
   display: flex;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
-  color: #000;
+  //color: #000;
+  color: #fff;
   font-weight: 700;
   padding: 2rem;
   margin: 0 ${({ theme }) => theme.abstand.seitenabstand}; /*FIX*/

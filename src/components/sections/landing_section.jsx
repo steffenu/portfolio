@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
 const Main_Flex_Container = styled.div`
   display: flex;
   flex-direction: column;
+  height: calc(100vh);
 `;
 
 export default landing_section;
