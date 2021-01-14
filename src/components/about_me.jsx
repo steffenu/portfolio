@@ -20,8 +20,8 @@ function about_me() {
         Probleme Lösen und Dinge anderen näher bringen. In einem Markt der nach
         Vorne geht , wo viele Interessante Dinge passieren.
         <br />
-        Durch gezielte Gestaltung den User
-        <Frontend> zum wiederkommen animieren.</Frontend>
+        Durch gezielte Gestaltung und verständliche Abläufe, den User
+        <Frontend> überzeugen.</Frontend>
         <br />
         <br />
         Ich freue mich auf spannende Herausforderungen in einem erfahrenem Team.
