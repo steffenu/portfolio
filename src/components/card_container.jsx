@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styled, { createGlobalStyle } from "styled-components";
 import Node from "../svg/node.svg";
 import React_SVG from "../svg/react.svg";
@@ -7,7 +8,11 @@ function card_container() {
   return (
     <Main_Flex_Container>
       <GlobalStyle></GlobalStyle>
-      <Main_Flex_Container_Card>
+
+      <Main_Flex_Container_Card
+        whileHover={{ scale: 1.02 }}
+        transition={{ ease: "easeOut" }}
+      >
         <Image></Image>
         <Flex_container_1>
           <Title>XYZ PROJEKT</Title>
@@ -19,7 +24,10 @@ function card_container() {
 
       {/* <React_SVG className="svg"></React_SVG> */}
 
-      <Main_Flex_Container_Card>
+      <Main_Flex_Container_Card
+        whileHover={{ scale: 1.02 }}
+        transition={{ ease: "easeOut" }}
+      >
         <Image></Image>
         <Flex_container_1>
           <Title>XYZ PROJEKT</Title>
@@ -34,7 +42,10 @@ function card_container() {
 
       {/* <Node className="svg"></Node> */}
 
-      <Main_Flex_Container_Card>
+      <Main_Flex_Container_Card
+        whileHover={{ scale: 1.02 }}
+        transition={{ ease: "easeOut" }}
+      >
         <Image></Image>
         <Flex_container_1>
           <Title>XYZ PROJEKT</Title>
@@ -50,12 +61,20 @@ function card_container() {
 
       {/* <Node className="svg"></Node> */}
 
-      <Main_Flex_Container_Card>
+      <Main_Flex_Container_Card
+        whileHover={{ scale: 1.02 }}
+        transition={{ ease: "easeOut" }}
+      >
         <Image></Image>
         <Flex_container_1>
           <Title>XYZ PROJEKT</Title>
           <Description_Container>
-            <Description>GUI MIT TKINTER , SOCKETS , THREADING</Description>
+            <Description>
+              {" "}
+              Some random text that serves as a longer description with more
+              text. Some random text that serves as a longer description with
+              more text.
+            </Description>
           </Description_Container>
         </Flex_container_1>
       </Main_Flex_Container_Card>
@@ -102,7 +121,13 @@ const Main_Flex_Container = styled.div`
   }
 `;
 
-const Main_Flex_Container_Card = styled.div`
+/* 
+const BoxStyled = styled(motion.div)`
+    display: flex;
+`;
+*/
+
+const Main_Flex_Container_Card = styled(motion.div)`
   width: 65vw;
   height: 32vw;
   background: #2b2d41;

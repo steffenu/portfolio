@@ -1,13 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styled, { createGlobalStyle } from "styled-components";
 
 function header() {
   return (
     <Main_Flex_Container>
       <Header_UL>
-        <Header_LI>MY STORY</Header_LI>
-        <Header_LI>PORTFOLIO</Header_LI>
-        <Header_LI>KONTAKT</Header_LI>
+        <Header_LI whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }}>
+          MY STORY
+        </Header_LI>
+        <Header_LI whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }}>
+          PORTFOLIO
+        </Header_LI>
+        <Header_LI whileHover={{ scale: 1.1 }} transition={{ duration: 0.2 }}>
+          KONTAKT
+        </Header_LI>
       </Header_UL>
     </Main_Flex_Container>
   );
@@ -33,6 +40,7 @@ const Main_Flex_Container = styled.div`
 
   @media (max-width: 768px) {
     justify-content: center;
+    display: none;
   }
 `;
 
@@ -62,7 +70,7 @@ const Header_UL = styled.ul`
   }
 `;
 
-const Header_LI = styled.li`
+const Header_LI = styled(motion.li)`
   font-size: 2rem;
 `;
 export default header;

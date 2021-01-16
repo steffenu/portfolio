@@ -75,6 +75,10 @@ const Side_Text = styled.p`
   font-family: "Roboto", serif;
   font-weight: 300;
   font-size: calc(1.2rem + 0.8vw);
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const Side_Text_container = styled.div`

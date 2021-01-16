@@ -104,7 +104,7 @@ const Flex_container_1 = styled.div`
 
   display: flex;
   flex-direction: column;
-  @media (max-width: 450px) {
+  @media (max-width: 530px) {
     justify-content: center;
     align-items: center;
   }
@@ -113,7 +113,7 @@ const Flex_container_1 = styled.div`
 const Flex_container_2 = styled.div`
   display: flex;
   flex-direction: column;
-  @media (max-width: 450px) {
+  @media (max-width: 530px) {
     justify-content: center;
     align-items: center;
   }
@@ -133,7 +133,7 @@ const Steffen = styled.h1`
 
   font-weight: 500;
 
-  @media (max-width: 450px) {
+  @media (max-width: 530px) {
     text-align: center;
     font-size: calc(4rem + 0.8vw);
   }
@@ -144,7 +144,7 @@ const Steffen_info = styled.p`
   color: #849184;
   margin-top: 6vw;
 
-  @media (max-width: 450px) {
+  @media (max-width: 530px) {
     text-align: center;
     font-size: calc(1.2rem + 0.5vw);
   }
@@ -156,7 +156,7 @@ const Front_to_Back = styled.h2`
   color: ${({ theme }) => theme.colors.primary};
 
   font-weight: 300;
-  @media (max-width: 450px) {
+  @media (max-width: 530px) {
     font-size: calc(2.4rem + 0.4vw);
     text-align: center;
   }
@@ -167,7 +167,7 @@ const Web_entwicklung = styled.p`
   font-size: calc(1rem + 0.8vw);
   line-height: 0.8;
   color: white;
-  @media (max-width: 450px) {
+  @media (max-width: 530px) {
     text-align: center;
     font-size: calc(1.2rem + 0.6vw);
   }

@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import styled, { createGlobalStyle } from "styled-components";
 import Javascript from "../svg/skills/javascript.svg";
 import Node from "../svg/skills/node3.svg";
@@ -17,58 +19,97 @@ import Gulp from "../svg/skills/gulp.svg";
 function skillset() {
   return (
     <Main_Grid_Container>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Javascript />
         <Text>JAVSCRIPT</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Node />
         <Text>NODE</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <React_Icon />
         <Text>REACT</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Python />
         <Text>PYTHON</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Php />
         <Text>PHP</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Mysql />
         <Text>DATABASES</Text>
       </Grid_Item>
 
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Linux />
         <Text>LINUX</Text>
       </Grid_Item>
 
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Apache />
         <Text>APACHE WEBSERVER</Text>
       </Grid_Item>
 
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Html />
         <Text>HTML 5</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Css />
         <Text>CSS 3</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Sass />
         <Text>PREPROCESSORS</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Gulp />
         <Text>TASK AUTOMATION</Text>
       </Grid_Item>
-      <Grid_Item>
+      <Grid_Item
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+      >
         <Git />
         <Text>VERSION CONTROL</Text>
       </Grid_Item>
@@ -104,7 +145,7 @@ const Main_Grid_Container = styled.div`
   }
 `;
 
-const Grid_Item = styled.div`
+const Grid_Item = styled(motion.div)`
   font-family: "Roboto", serif;
   font-weight: 300;
 
@@ -136,7 +177,7 @@ const Grid_Item = styled.div`
   }
 
   & :hover {
-    border: 1px solid #ff0000;
+    //border: 1px solid #ff0000;
   }
 
   @media (min-width: 1280px) {

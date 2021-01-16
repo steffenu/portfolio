@@ -1,14 +1,17 @@
 import React from "react";
+
 import styled, { createGlobalStyle } from "styled-components";
 
 import Header from "../header";
 import Landing from "../landing";
+import Menu from "../mobile_menu";
 import Praktikumsplatz from "../praktikumsplatz";
 
 function landing_section() {
   return (
     <Main_Flex_Container>
       <GlobalStyle></GlobalStyle>
+      <Menu></Menu>
       <Header></Header>
       <Landing></Landing>
     </Main_Flex_Container>
@@ -21,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
 
   
 }
+
+@media (min-width: 768px) {
+    .bm-burger-bars {
+      display: none !important;
+    }
+  }
 
 `;
 

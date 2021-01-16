@@ -22,7 +22,7 @@ function about_me_second() {
         </SubText>
         <br />
         <br />
-        Mit welchen Sprachen kennst du dich am besten aus ? Worauf hast du Lust.
+        Welche <Frontend>Programmiersprachen</Frontend> nutzt du häufiger ?
         <br />
         <SubText>
           Mit Javscript habe ich Chrome Erweiterungen , Discord Bots , Apis ,
